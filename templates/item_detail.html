@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %}More Info on Item{% endblock title %}
+
+{% block content %}
+
+<div class="card border-info mx-auto mt-4">
+
+
+    <img src=" {{ item.photo.url }}" alt="{{ itel.title }}" class="card-img-top img-fluid">
+    <div class="card-body">
+        <h2 class="card-title">{{ object.title }}</h2>
+        <p>Offered By : {{ object.seller }} | {{ object.date }}</p>
+        <p class="card-text">{{ object.description|linebreaks }}</p>
+        <p class="card-text"> Price: {{ object.price }}</p>
+
+        <p><a href="{% url 'item_edit' item.pk %}">Edit <i class="fa fa-pencil-square-o" aria-hidden="true"></i></a> |
+            <a href="{% url 'item_delete' item.pk %}">Delete <i class="fa fa-trash" aria-hidden="true"></i></a> |
+            <a href="{%url 'item_list' %}">All Items <i class="fa fa-list" aria-hidden="true"></i></a> </p>
+    </div>
+</div>
+{% endblock content %}

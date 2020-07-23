@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock title %}
+
+{% block content %}
+
+<!--{% if user.is_authenticated %}
+Hello, {{user.username}}
+<p><a href=" {%  url 'logout' %}">Log Out <i class="fa fa-sign-out" aria-hidden="true"></i></a></p>
+
+{% else %}
+<a href="{% url 'login' %}">Log In</a>
+<a href="{% url 'signup' %}">Sign Up</a>
+
+{% endif %}-->
+
+<div class="jumbotron mt-5">
+    <h1 class=" display-4">Gala's Sale Stuffs</h1>
+    <p class="lead">Buy and Sell Anything</p>
+    <p class="lead">
+        <a href="{% url 'item_list' %}" class="btn btn-info btn-lg" role="button">Views Items</a>
+    </p>
+</div>
+
+{% endblock content %}
