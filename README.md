@@ -1,5 +1,4 @@
-# Gs-List
-Graigslist Clone
+# Gs-List (Graigslist Clone)
 
 The application was created using the Python programming language, as well as the Django web framework. The application also includes an API using Django REST Framework. Front-end development includes HTML, CSS, and Bootstrap.
 
